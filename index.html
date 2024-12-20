@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CRUD-5</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+	<div class="container mt-5">
+		<h1 class="fw-bold text-center">CRUD-5</h1>
+		<div class="main row justify-content-center">
+			<form id="stocks-form" class="col-6">
+				<div class="mb-2">
+					<label>Stocks</label>
+					<input type="text" id="stocks" class="form-control" placeholder="Enter the stocks" />
+				</div>
+				<div class="mb-2">
+					<label>number of stocks</label>
+					<input type="text" id="numStocks" class="form-control" placeholder="Enter the number of stocks" />
+				</div>
+				<div>
+					<button class="btn btn-success" type="submit">Submit</button>
+				</div>
+			</form>
+
+			<div class="col-8 mt-3">
+				<table class="table table-bordered text-center border-dark">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Stocks</th>
+							<th>Number of Stocks</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody id="stocks-list"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+	crossorigin="anonymous"></script>
+
+</html>
